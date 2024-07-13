@@ -8,3 +8,24 @@ website: www.49team.org
 load: POSTWORLD
 libraries:
   - org.jetbrains:annotations:13.0
+commands:
+  de:
+    description: 以“德”服玩家
+    usage: /<command>
+  god:
+    description: 开启上帝视角
+    usage: /<command>
+    aliases:
+      - kodemode
+      - pro
+  food:
+    description: 设置食物
+    usage: /<command>
+  repeat:
+    description: 重复指令
+  fart:
+    description: 放一个屁
+  setspawn:
+    description: 设置重生点
+  spawn:
+    description: 传送到设置的重生点

@@ -1,4 +1,4 @@
-package top.peacefuly.catchapi;
+package top.peacefuly.catchapi.Listener;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

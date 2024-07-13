@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="catchAPI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/catchAPI_jar</output-path>
+    <root id="archive" name="catchAPI.jar">
+      <element id="module-output" name="catchAPI" />
+    </root>
+  </artifact>
+</component>
