@@ -47,6 +47,11 @@ public final class CatchAPI extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
+        if (cmd.getName().equalsIgnoreCase("reload")){
+            this.reloadConfig();
+            sender.sendMessage("热加载成功");
+        }
+
         if (cmd.getName().equalsIgnoreCase("de")){
             if (sender instanceof Player){
                 Player p = (Player) sender;

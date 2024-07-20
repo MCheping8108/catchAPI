@@ -9,6 +9,8 @@ load: POSTWORLD
 libraries:
   - org.jetbrains:annotations:13.0
 commands:
+  reload:
+    description: 重载插件
   de:
     description: 以“德”服玩家
     usage: /<command>
