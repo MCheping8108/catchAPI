@@ -8,16 +8,15 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import top.peacefuly.catchapi.Cooldowns.Cooldowns;
 import top.peacefuly.catchapi.DeathListener.DeathListener;
 import top.peacefuly.catchapi.EventListener.EventListener;
 import top.peacefuly.catchapi.FartCommand.FartCommand;
 import top.peacefuly.catchapi.JoinLeaveListen.JoinLeaveListen;
+import top.peacefuly.catchapi.Listener.InventorryListener;
 import top.peacefuly.catchapi.Listener.Listener;
 import top.peacefuly.catchapi.RepeatCommand.RepeatCommand;
-import top.peacefuly.catchapi.command.FoodCommand;
-import top.peacefuly.catchapi.command.SetSpawnCommand;
-import top.peacefuly.catchapi.command.SpawnCommand;
-import top.peacefuly.catchapi.command.command;
+import top.peacefuly.catchapi.command.*;
 
 public final class CatchAPI extends JavaPlugin {
 
@@ -35,12 +34,15 @@ public final class CatchAPI extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new EventListener(), this);
         getServer().getPluginManager().registerEvents(new JoinLeaveListen(this), this);
         getServer().getPluginManager().registerEvents(new DeathListener(this), this);
+        getServer().getPluginManager().registerEvents(new InventorryListener(), this);
         getCommand("god").setExecutor(new command());
         getCommand("food").setExecutor(new FoodCommand());
         getCommand("repeat").setExecutor(new RepeatCommand());
         getCommand("fart").setExecutor(new FartCommand());
         getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
+        getCommand("cooldown").setExecutor(new Cooldowns());
+        getCommand("menu").setExecutor(new MenuCommand());
 
     }
 

@@ -31,3 +31,7 @@ commands:
     description: 设置重生点
   spawn:
     description: 传送到设置的重生点
+  cooldown:
+    description: 开启倒计时
+  menu:
+    description: 不知道
